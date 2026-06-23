@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="Keywords"
+      content="Gerador de senhas, Password Generator, Gerador de senhas aleatórias, Gerador de senhas seguras, Gerador de senhas fortes, Gerador de senhas personalizadas, Gerador de senhas online, Gerador de senhas gratuito, Gerador de senhas fácil de usar, Gerador de senhas para redes sociais, Gerador de senhas para e-mails"
+    />
+    <title>Gerador de Senhas</title>
+  </head>
+  <body>
+    <h1>Gerador de Senhas</h1>
+    <div class="container">
+      <span>Tamanho: <span id="value"></span> caracteres</span>
+      <input
+        type="range"
+        id="slider"
+        class="slider"
+        min="6"
+        max="25"
+        value="15"
+      />
+      <button class="button" id="button" onclick="generatePassword()">
+        Gerar Senha
+      </button>
+    </div>
+
+    <div
+      class="container-password hide"
+      id="container-password"
+      onclick="copyPassword()"
+    >
+      <span class="title-password">Sua Senha Gerada:</span>
+      <span class="password" id="password"></span>
+      <span class="tooltip" id="tooltip">Clique na senha para copiar 👆🏻</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

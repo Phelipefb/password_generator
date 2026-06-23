@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background: linear-gradient(90deg, #000000, #1c1c1c);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Rampart One", "Segoe UI", sans-serif;
+  font-size: 60px;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 24px;
+  background: -webkit-linear-gradient(#fff, #51ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  font-family: "Segoe UI", sans-serif;
+  max-width: 500px;
+  margin: 14px 0;
+}
+
+.container span {
+  color: #fff;
+  font-size: 22px;
+}
+
+#value {
+  color: #fff;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 12px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  margin-top: 8px;
+}
+
+.button {
+  height: 40px;
+  background: #51ff00;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 40px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container-password {
+  max-width: 500px;
+  margin: 14px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.container-password span {
+  color: #fff;
+  font-size: 22px;
+}
+
+.title-password {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.password {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 1px solid #51ff00;
+  transition: transform 0.5s;
+}
+
+.password:hover {
+  transform: scale(0.95);
+}
+
+.tooltip {
+  color: #fff;
+  position: relative;
+  top: 20px;
+  padding: 6px 8px;
+  background: rgb(15, 15, 15);
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .tooltip {
+  visibility: visible;
+  bottom: 50px;
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}
